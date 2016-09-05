@@ -4,7 +4,6 @@
   }
 
   body {
-    position: relative;
     height: 100vh;
     background-repeat:no-repeat;
     background-image: linear-gradient(to bottom, #20B2AA 60%, white 100%);
@@ -12,62 +11,76 @@
   }
 
   #container {
-    position: relative;
     border-radius: .5em;
-    width: 45%;
-    margin: 2% auto;
-    height: 85vh;
-    background-color: white;
+    width: 475px;
+    margin: 40px auto 0 auto;
+    height: 600px;
+    background-color: #FFF;
     box-shadow: .65em .65em .5em #555;
   }
 
   #title {
-    font-size: 2em;
-    padding: 1em 0 .25em 0;
+    width: 407px;
+    font-size: 2.5em;
+    color: #800080;
     text-align: center;
+    padding-top: 8px;
   }
 
   #calculator {
   /*border: 1px solid black;*/
-   width: 66.75%;
-   height: 80%;
-   margin: inherit;
+   width: 407px;
+   height: 600px;
+   margin: auto;
 }
 
   .result {
-   width: 270px;
-   height: 90px;
-   border: .5px solid grey;
-   padding-left: 1em;
-   float: left;
-   line-height: 90px;
+    box-shadow: 2px 4px 2px #777;
+    /*box-shadow: inset 0px 4px rgba(0, 0, 0, 0.2);*/
+    background-color: #fafafa;
+    width: 295px;
+    height: 90px;
+    /*border: .5px solid grey;*/
+    margin: 5px;
+    float: left;
+    border-radius: .5em;
   }
 
   .result > p {
-    margin: auto;
     letter-spacing: .1em;
-    font-size: 2em;
+    font-size: 3.5em;
+    color: #e600e6;
+    line-height: 0px;
+    padding-left: 20px;
+
   }
 
   .clear, span {
    height: 90px;
-   border: .5px solid grey;
+   /*border: .5px solid grey;*/
    text-align: center;
-   line-height: 90px;
+   line-height: 100px;
    cursor: pointer;
-   font-size: 1.5em;
+   border-radius: .2em;
+   margin: .1em;
+   background-color: #800080;
+   box-shadow: 2px 4px 2px #777;
+
 
   }
 
   .clear {
    width: 90px;
    float: left;
-   font-size: 1.5em;
+   font-size: 3.5em;
+   color: #fff;
+
   }
 
   span {
    float: left;
    width: 90px;
-   font-size: 1.5em;
+   font-size: 3.5em;
+   color: #fff;
 
   }

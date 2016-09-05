@@ -10,9 +10,10 @@ window.onload = function () {
       buttons[i].addEventListener("click", addValue(i));
     }
   }
-
   clear.onclick = function () {
+    alert("function has cleared");
     result.innerHTML = '';
+    console.log("it works")
   };
 
   function addValue(i) {
@@ -22,19 +23,18 @@ window.onload = function () {
       } else if (buttons[i].innerHTML === 'x') {
          result.innerHTML  += '*';
       } else {
-                    result.innerHTML += buttons[i].innerHTML;
-            }
+         result.innerHTML += buttons[i].innerHTML;
+      }
     };
   }
 
   function calculate(i) {
     return function () {
-            var final_res = result.innerHTML;
+      var final_res = result.innerHTML;
 
-            var bugFix = final_res.replace(/\d+/g, function(numb){
-                return parseInt(numb, 10);
-            });
-
+      var bugFix = final_res.replace(/\d+/g, function(numb){
+          return parseInt(numb, 10);
+      });
 
       result.innerHTML = eval(bugFix);
     };
