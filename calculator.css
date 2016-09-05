@@ -1,35 +1,60 @@
-{
- margin: 0;
- padding: 0;
- box-sizing: border-box;
- letter-spacing: 2px;
-}
-#calculator {
- width: 400px;
- margin: 50px auto 0 auto;
-}
-.result {
- width: 289px;
- height: 40px;
- border: 1px solid grey;
- float: left;
- line-height: 40px;
-}
-.result > p {
- /* margin-left: 10px; */
-}
-.clear, span {
- height: 40px;
- border: 1px solid grey;
- text-align: center;
- line-height: 40px;
- cursor: pointer;
-}
-.clear {
- width: 95px;
- float: left;
-}
-span {
- float: left;
- width: 95px;
-}
+* {
+  font-family: sans-serif;
+   box-sizing: border-box;
+  }
+
+  body {
+    height: 100vh;
+    background-repeat:no-repeat;
+    background-image: linear-gradient(to bottom, green 20%, white 100%);
+    background-blend-mode: color-dodge;
+  }
+
+  #container {
+    position: relative;
+    width: 60%;
+    margin: auto;
+    height: 70vh;
+    background-color: yellow;
+  }
+
+  #title {
+    position: relative;
+    padding-top: 5%;
+    width: 400px;
+    margin: 5% auto 2% auto;
+    text-align: center;
+  }
+
+  #calculator {
+   width: 400px;
+   margin: auto;
+  }
+  .result {
+   width: 285px;
+   height: 40px;
+   border: 1px solid grey;
+   padding-left: 21px;
+   float: left;
+   line-height: 40px;
+  }
+  .result > p {
+    margin: auto;
+    letter-spacing: .15em;
+  }
+
+  .clear, span {
+   height: 40px;
+   border: 1px solid grey;
+   text-align: center;
+   line-height: 40px;
+   cursor: pointer;
+  }
+  .clear {
+   width: 95px;
+   float: left;
+  }
+  span {
+   float: left;
+   width: 95px;
+  }
